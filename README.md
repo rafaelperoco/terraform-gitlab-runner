@@ -2,14 +2,14 @@
 Terraform code to create GitLab Runners on Google Cloud Platform
 
 ## How to use:
-**1. Create a Google Cloud Platform service account**
-**2. Get the service account key using this command:**
+1. Create a Google Cloud Platform service account
+2. Get the service account key using this command:
 ```shell
 cat service-account.json | jq -r '.private_key'
 ```
 and change the YOUR_GOOGLE_APPLICATION_CREDENTIALS_KEY to it.
 This key will be used to allow the Runner to access the Google Storage bucket.
-**3. Create your terraform.tfvars file with the following variables:**
+3. Create your terraform.tfvars file with the following variables:
 
 terraform.tfvars
 ```terraform
@@ -122,11 +122,11 @@ distribution_policy_zones = [
 ]
 ```
 
-**4. Initialize the Terraform state with the following command:**
+4. Initialize the Terraform state with the following command:
 ```shell
 terraform init
 ```
-**5. Apply the Terraform configuration with the following command:**
+5. Apply the Terraform configuration with the following command:
 ```shell
 terraform apply
 ```
