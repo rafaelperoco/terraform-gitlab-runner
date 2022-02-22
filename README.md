@@ -9,8 +9,8 @@ cat service-account.json | jq -r '.private_key'
 ```
 and change the YOUR_GOOGLE_APPLICATION_CREDENTIALS_KEY to it.
 This key will be used to allow the Runner to access the Google Storage bucket.
-3. Create your terraform.tfvars file with the following variables:
 
+3. Create your terraform.tfvars file with the following variables:
 terraform.tfvars
 ```terraform
 hostname    = "gitlab-runner"
