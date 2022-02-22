@@ -2,7 +2,7 @@
 Terraform code to create GitLab Runners on Google Cloud Platform
 
 ## How to use:
-1. Create a Google Cloud Platform service account
+1. [Create a Google Cloud Platform service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts)
 2. Get the service account key using this command:
 ```shell
 cat service-account.json | jq -r '.private_key'
