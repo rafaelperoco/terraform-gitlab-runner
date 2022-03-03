@@ -127,6 +127,7 @@ distribution_policy_zones = [
 ```shell
 terraform init
 ```
+
 5. Apply the Terraform configuration with the following command:
 ```shell
 terraform apply
